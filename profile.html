@@ -13,67 +13,90 @@
 
 </head>
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q4 Skillstest</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-</head>
-<body>
-    
-    <div class="d-flex align-items-strectch">
+<div class="d-flex align-items-stretch">
 
-        <div class="innav">
-            <img src="Logo.png" class="sidebar-logo" class="profile">
-            <ul class="nav flex-column">
-                <li><a href="">Dashboard</a></li>
-                <li><a href="">Virtual Notebooks</a></li>
-                <li><a href="">Tasks</a></li>
-                <li><a href="">Profile</a></li>
-                <li><a href="">Logout</a></li>
-            </ul>
-        </div>
+    <div class="sidebar">
 
-        <div class="vns">
-            <br>
-            <h4 class="bg-dark text-white rounded p-3">Profile</h4>
-            <p>Student Information</p>
-        </div>
-        
-        <div class="profile-section">
-            <img src="Profilepic.png" id="profilePic">
-            <input type="file" id="upload">
-        </div>
-        
-        <div class="container">
-            <h4>Student Information</h4>
-            <p><br>
-                Student ID 
-                <br>
-                1A987654
-                <br><br>
-                Contack Number 
-                <br>
-                +639381200741
-                <br><br>
-                Email Address
-                <br>
-                delacruz.jr@obmontessori.edu.ph
-                <br><br>
-                Gender
-                <br>
-                Male
-            </p>
-            <button type="button" onclick="window.location.reload()">Change Password</button>
-        </div>
+        <img src="Logo.png" class="sidebar-logo">
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="notebooks.html">Virtual Notebooks</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="profile.html" class="active">Profile</a>
+        <a href="index.html">Logout</a>
+
     </div>
-</body>
-<script src="main.js"></script>
-</html>
+
+
+    <div class="container p-4">
+
+        <div class="notebook-button">
+            <b>PROFILE</b>
+        </div>
+
+        <p class="sub-text">
+            Student Information
+        </p>
+
+        <div class="row">
+
+            <div class="col-md-4 text-center">
+
+                <img src="Profilepic.png"
+                id="profilePic"
+                class="profile-pic">
+
+                <input type="file"
+                id="upload"
+                class="form-control mt-3">
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="card p-4 shadow rounded">
+
+                    <h4>Student Information</h4>
+
+                    <p>
+                        <strong>Student ID:</strong>
+                        1A987654
+                    </p>
+
+                    <p>
+                        <strong>Contact Number:</strong>
+                        +639381200741
+                    </p>
+
+                    <p>
+                        <strong>Email Address:</strong>
+                        delacruz.jr@obmontessori.edu.ph
+                    </p>
+
+                    <p>
+                        <strong>Gender:</strong>
+                        Male
+                    </p>
+
+                    <button type="button"
+                    class="btn btn-info text-white"
+                    onclick="changePassword()">
+
+                        Change Password
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="proj.js"></script>
 </body>
 </html>
