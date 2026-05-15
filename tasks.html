@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="d-flex">
+
+    <div class="sidebar">
+
+        <img src="Shield.jpeg" class="sidebar-logo">
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="notebooks.html">Virtual Notebooks</a>
+        <a href="tasks.html" class="active">Tasks</a>
+        <a href="profile.html">Profile</a>
+        <a href="index.html">Logout</a>
+
+    </div>
+
+    <div class="container p-4">
+
+        <div class="notebook-button">
+            <b>TASKS</b>
+        </div>
+
+        <p class="sub-text">
+            Choose a task.
+        </p>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <div class="card p-4 shadow rounded">
+
+                    <h3>Mathematics</h3>
+
+                    <p>
+                        <b>Drill Sheet 2</b><br>
+                        Deadline: April 9, 2026
+                    </p>
+
+                    <button class="btn btn-info text-white"
+                    onclick="submitTask()">
+                        Take this activity
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="card p-4 shadow rounded">
+
+                    <h3>Science</h3>
+
+                    <p>
+                        <b>Lab Activity 3</b><br>
+                        Deadline: April 10, 2026
+                    </p>
+
+                    <button class="btn btn-info text-white"
+                    onclick="submitTask()">
+                        Take this activity
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="proj.js"></script>
+</body>
+</html>
