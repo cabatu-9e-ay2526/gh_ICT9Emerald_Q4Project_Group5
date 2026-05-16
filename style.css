@@ -82,6 +82,15 @@ footer {
     font-size: 14px;
 }
 
+.notebooks-page .subject-card::after {
+  content: "";
+  display: block;
+  width: 100%;                  
+  height: 15px;                 
+  background-color: #5a626a;   
+  border-radius: 10px;   
+}
+
 .notebooks-page .clear {
     clear: both;
 }
