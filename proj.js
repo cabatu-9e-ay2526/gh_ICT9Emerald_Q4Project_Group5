@@ -25,6 +25,7 @@ function checkLogin(){
 
 }
 
+
 function clearForm(){
 
     document.getElementById("username").value = "";
@@ -38,13 +39,11 @@ function submitTask(){
 
 }
 
-
 function changePassword(){
 
     alert("Password change feature coming soon.");
 
 }
-
 
 function showQuote(){
 
@@ -59,7 +58,6 @@ function showQuote(){
 
     let random = Math.floor(Math.random() * quotes.length);
 
-    alert(quotes[random]);
+    document.getElementById("quoteDisplay").innerHTML = quotes[random];
 
 }
-
