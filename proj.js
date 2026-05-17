@@ -3,8 +3,13 @@ function checkLogin(){
     let username = document.getElementById("username").value;
     let password = document.getElementById("pass").value;
 
+    if(username === "" || password === ""){
 
-    if(username == "admin" && password == "1234"){
+        alert("Please fill out all fields.");
+
+    }
+
+    else if(username == "admin" && password == "1234"){
 
         alert("Login Successful!");
 
