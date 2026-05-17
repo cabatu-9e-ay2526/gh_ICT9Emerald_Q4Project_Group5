@@ -1,5 +1,4 @@
 
-
 .container {
     border-radius: 15px;
 }
@@ -194,4 +193,9 @@ footer {
 
 .btn-info:hover{
     background-color: #009dce !important;
+}
+
+.main-content{
+    margin-left: 220px;
+    width: 100%;
 }
